@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Ajax.ActionLink("Create New", "Create", new AjaxOptions
+{
+    UpdateTargetId = "createPost",
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "Get"
+})
+<div id="createPost"></div>
+
+<div id="addressList">@Html.Partial("List")</div>

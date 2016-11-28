@@ -1,0 +1,3 @@
+﻿function Success() {
+    $("#createPost").html("");
+}

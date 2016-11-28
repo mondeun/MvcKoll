@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+<div>
+    <header>
+        @Html.ActionLink("Start", "Index", "AddressBook")
+    </header>
+    @RenderBody()
+</div>
+<footer>Mvc Koll</footer>
+    
+    <script src="/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/addressbook.js"></script>
+</body>
+</html>
